@@ -54,6 +54,22 @@ export default function Team() {
       
       if (!profile?.organization_id) throw new Error("No organization found");
 
+      // 1. Trigger Email via Netlify Function (Backend)
+      const response = await fetch('/.netlify/functions/invite', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          organization_id: profile.organization_id
+        })
+      });
+
+      const result = await response.json();
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to trigger email invitation');
+      }
+
+      // 2. Record in local DB for UI
       const { error } = await supabase.from('invitations').insert({
         email,
         organization_id: profile.organization_id,
@@ -62,7 +78,7 @@ export default function Team() {
 
       if (error) throw error;
       
-      toast.success('Invitation sent successfully!');
+      toast.success('Invitation sent via Email!');
       setEmail('');
       fetchInvitations();
     } catch (error: any) {
