@@ -1,0 +1,318 @@
+{
+  "agent:main:main": {
+    "origin": {
+      "label": "+917666272415",
+      "provider": "whatsapp",
+      "surface": "whatsapp",
+      "chatType": "direct",
+      "from": "+917666272415",
+      "to": "+917666272415",
+      "accountId": "default"
+    },
+    "sessionId": "9c3a1c32-4011-4629-9cde-256fed2de2c0",
+    "updatedAt": 1770154408655,
+    "deliveryContext": {
+      "channel": "whatsapp",
+      "to": "+917666272415",
+      "accountId": "default"
+    },
+    "lastChannel": "whatsapp",
+    "lastTo": "+917666272415",
+    "lastAccountId": "default",
+    "systemSent": true,
+    "abortedLastRun": false,
+    "chatType": "direct",
+    "sessionFile": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\data\\agents\\main\\sessions\\9c3a1c32-4011-4629-9cde-256fed2de2c0.jsonl",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>bluebubbles</name>\n    <description>Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).</description>\n    <location>C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\node_modules\\openclaw\\skills\\bluebubbles\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\node_modules\\openclaw\\skills\\coding-agent\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "bluebubbles"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "bluebubbles",
+          "description": "Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).",
+          "filePath": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\node_modules\\openclaw\\skills\\bluebubbles\\SKILL.md",
+          "baseDir": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\node_modules\\openclaw\\skills\\bluebubbles",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\node_modules\\openclaw\\skills\\coding-agent\\SKILL.md",
+          "baseDir": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\node_modules\\openclaw\\skills\\coding-agent",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\moltbot\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-3-pro-preview",
+    "contextTokens": 1000000,
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1770154393120,
+      "sessionId": "9c3a1c32-4011-4629-9cde-256fed2de2c0",
+      "sessionKey": "agent:main:main",
+      "provider": "google",
+      "model": "gemini-3-pro-preview",
+      "workspaceDir": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot",
+      "bootstrapMaxChars": 20000,
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 23288,
+        "projectContextChars": 13368,
+        "nonProjectContextChars": 9920
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\AGENTS.md",
+          "missing": false,
+          "rawChars": 7804,
+          "injectedChars": 7804,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\SOUL.md",
+          "missing": false,
+          "rawChars": 1664,
+          "injectedChars": 1664,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\TOOLS.md",
+          "missing": false,
+          "rawChars": 850,
+          "injectedChars": 850,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\IDENTITY.md",
+          "missing": false,
+          "rawChars": 632,
+          "injectedChars": 632,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\USER.md",
+          "missing": false,
+          "rawChars": 478,
+          "injectedChars": 478,
+          "truncated": false
+        },
+        {
+          "name": "HEARTBEAT.md",
+          "path": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\HEARTBEAT.md",
+          "missing": false,
+          "rawChars": 167,
+          "injectedChars": 167,
+          "truncated": false
+        },
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "C:\\Users\\Varun Mahakal\\Documents\\trae_projects\\Stockpilot\\BOOTSTRAP.md",
+          "missing": false,
+          "rawChars": 1449,
+          "injectedChars": 1449,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 1389,
+        "entries": [
+          {
+            "name": "bluebubbles",
+            "blockChars": 343
+          },
+          {
+            "name": "coding-agent",
+            "blockChars": 327
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 344
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 2114,
+        "schemaChars": 14216,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 398,
+            "propertiesCount": 4
+          },
+          {
+            "name": "edit",
+            "summaryChars": 129,
+            "schemaChars": 617,
+            "propertiesCount": 6
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 313,
+            "propertiesCount": 3
+          },
+          {
+            "name": "exec",
+            "summaryChars": 181,
+            "schemaChars": 1037,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 85,
+            "schemaChars": 844,
+            "propertiesCount": 11
+          },
+          {
+            "name": "whatsapp_login",
+            "summaryChars": 74,
+            "schemaChars": 162,
+            "propertiesCount": 3
+          },
+          {
+            "name": "browser",
+            "summaryChars": 1251,
+            "schemaChars": 1869,
+            "propertiesCount": 28
+          },
+          {
+            "name": "canvas",
+            "summaryChars": 106,
+            "schemaChars": 661,
+            "propertiesCount": 18
+          },
+          {
+            "name": "nodes",
+            "summaryChars": 94,
+            "schemaChars": 1399,
+            "propertiesCount": 31
+          },
+          {
+            "name": "cron",
+            "summaryChars": 1959,
+            "schemaChars": 530,
+            "propertiesCount": 12
+          },
+          {
+            "name": "message",
+            "summaryChars": 110,
+            "schemaChars": 3213,
+            "propertiesCount": 79
+          },
+          {
+            "name": "tts",
+            "summaryChars": 129,
+            "schemaChars": 223,
+            "propertiesCount": 2
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 225,
+            "schemaChars": 465,
+            "propertiesCount": 11
+          },
+          {
+            "name": "agents_list",
+            "summaryChars": 72,
+            "schemaChars": 33,
+            "propertiesCount": 0
+          },
+          {
+            "name": "sessions_list",
+            "summaryChars": 54,
+            "schemaChars": 176,
+            "propertiesCount": 4
+          },
+          {
+            "name": "sessions_history",
+            "summaryChars": 36,
+            "schemaChars": 149,
+            "propertiesCount": 3
+          },
+          {
+            "name": "sessions_send",
+            "summaryChars": 84,
+            "schemaChars": 203,
+            "propertiesCount": 5
+          },
+          {
+            "name": "sessions_spawn",
+            "summaryChars": 107,
+            "schemaChars": 312,
+            "propertiesCount": 8
+          },
+          {
+            "name": "session_status",
+            "summaryChars": 207,
+            "schemaChars": 89,
+            "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 175,
+            "schemaChars": 733,
+            "propertiesCount": 6
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 360,
+            "propertiesCount": 3
+          },
+          {
+            "name": "image",
+            "summaryChars": 184,
+            "schemaChars": 163,
+            "propertiesCount": 4
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 235,
+            "schemaChars": 139,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 188,
+            "schemaChars": 128,
+            "propertiesCount": 3
+          }
+        ]
+      }
+    },
+    "authProfileOverride": "google:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0
+  }
+}
