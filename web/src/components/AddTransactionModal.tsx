@@ -21,7 +21,7 @@ interface AddTransactionModalProps {
 
 export default function AddTransactionModal({ isOpen, onClose, onSuccess }: AddTransactionModalProps) {
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<TransactionFormData>({
-    resolver: zodResolver(transactionSchema),
+    resolver: zodResolver(transactionSchema) as any,
     defaultValues: {
       type: 'EXPENSE',
       amount: 0,
